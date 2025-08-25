@@ -1,0 +1,212 @@
+.focus-areas-section {
+  padding: 80px 0;
+  background-color: #f9fafc;
+  position: relative;
+  overflow: hidden;
+}
+.focus-areas-section::before {
+  content: '';
+  position: absolute;
+  top: -100px;
+  right: -100px;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(252,217,68,0.15) 0%, rgba(252,217,68,0) 70%);
+  z-index: 0;
+}
+.section-title {
+  font-weight: 800;
+  font-size: 2.8rem;
+  color: #0e8e37;
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 1;
+}
+.section-title::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 5px;
+  background: #f3930b;
+  margin-top: 15px;
+}
+.section-description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #4a4a4a;
+  margin-bottom: 30px;
+}
+.focus-list {
+  padding-left: 20px;
+}
+.focus-list li {
+  font-weight: 600;
+  margin-bottom: 12px;
+  position: relative;
+  padding-left: 15px;
+}
+.focus-list li::before {
+  content: '•';
+  color: #fcd944;
+  font-size: 1.5rem;
+  position: absolute;
+  left: -10px;
+  top: -3px;
+}
+.focus-list a {
+  color: #1c1c52;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border-bottom: 2px solid transparent;
+}
+.focus-list a:hover {
+  color: #fcd944;
+  border-bottom-color: #fcd944;
+}
+.solar-system-container {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.solar-system {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+}
+.central-image {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  animation: centralBreath 4s infinite ease-in-out;
+  border: 8px solid white;
+  box-shadow: 0 0 0 4px #fcd944;
+}
+@keyframes centralBreath {
+  0%, 100% {
+    transform: translate(-50%, -50%) scale(0.99);
+    box-shadow: 0 0 30px 10px rgba(255, 235, 59, 0.3);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.01);
+    box-shadow: 0 0 40px 15px rgba(255, 235, 59, 0.5);
+  }
+}
+.section-icon {
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  font-weight: bold;
+  width: 140px;
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 0 20px 5px rgba(255, 235, 59, 0.6), 0 4px 12px rgba(0,0,0,0.2);
+  position: absolute;
+  z-index: 1;
+  transition: all 0.4s ease;
+  animation: breathe 3s infinite ease-in-out;
+  text-decoration: none !important;
+  font-size: 0.75rem;
+  line-height: 1.2;
+  overflow: hidden;
+}
+@keyframes breathe {
+  0%, 100% {
+    transform: translate(-50%, -50%) scale(0.98);
+    box-shadow: 0 0 15px 3px rgba(255, 235, 59, 0.5), 0 4px 12px rgba(0,0,0,0.2);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.02);
+    box-shadow: 0 0 25px 8px rgba(255, 235, 59, 0.7), 0 6px 16px rgba(0,0,0,0.25);
+  }
+}
+.section-icon:hover {
+  animation: none;
+  transform: translate(-50%, -50%) scale(1.1) !important;
+  box-shadow: 0 0 30px 10px rgba(255, 235, 59, 0.8), 0 6px 18px rgba(0, 0, 0, 0.35);
+  z-index: 2;
+}
+.icon-img {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+.bg-water-sanitation-and-hygiene-wash { background: #5f61a9; }
+.bg-health-and-well-being { background: #fcd944; color: #212529; }
+.bg-food-security-and-livelihoods { background: #f5d940; color: #212529; }
+.bg-economic-empowerment { background: #4f7cd3; }
+.bg-education-and-vocational-training { background: #4b7159; }
+.bg-climate-change-adaptation { background: #f2bb32; color: #212529; }
+.planet:nth-child(2)  { top: 0%; left: 50%; transform: translate(-50%, -50%); }
+.planet:nth-child(3)  { top: 18%; left: 85%; transform: translate(-50%, -50%); }
+.planet:nth-child(4)  { top: 50%; left: 100%; transform: translate(-50%, -50%); }
+.planet:nth-child(5)  { top: 82%; left: 85%; transform: translate(-50%, -50%); }
+.planet:nth-child(6)  { top: 100%; left: 50%; transform: translate(-50%, -50%); }
+.planet:nth-child(7)  { top: 82%; left: 15%; transform: translate(-50%, -50%); }
+.planet:nth-child(8)  { top: 50%; left: 0%; transform: translate(-50%, -50%); }
+
+
+/* Responsive */
+@media (max-width: 992px) {
+  .solar-system { width: 400px; height: 400px; }
+  .central-image { width: 260px; height: 260px; }
+  .section-icon { 
+    width: 120px; 
+    height: 120px; 
+    padding: 10px;
+    font-size: 0.7rem;
+  }
+  .icon-img {
+    font-size: 1.3rem;
+    margin-bottom: 4px;
+  }
+}
+@media (max-width: 768px) {
+  .focus-areas-section { padding: 60px 0; }
+  .section-title { font-size: 2.2rem; }
+  .solar-system-container { margin-top: 50px; }
+}
+@media (max-width: 576px) {
+  .solar-system {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+  }
+  .central-image {
+    width: 180px;
+    height: 180px;
+    position: static;
+    transform: none;
+    animation: none;
+    margin-bottom: 30px;
+  }
+  .section-icon {
+    position: static;
+    width: 140px;
+    height: 140px;
+    animation: none;
+    transform: none !important;
+    margin: 0 auto;
+    padding: 12px;
+    font-size: 0.75rem;
+  }
+  .section-icon:hover {
+    transform: scale(1.1) !important;
+  }
+  .icon-img {
+    font-size: 1.5rem;
+  }
+}

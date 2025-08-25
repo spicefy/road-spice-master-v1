@@ -1,0 +1,97 @@
+/* Impact Stories Section Styling */
+/* General styles for the Impact Stories section */
+  /* Card styling */
+  .impact-card {
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .impact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+  }
+  
+  .impact-card .card-img-top {
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .impact-title {
+    color: #0e8e37;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+  
+  .impact-divider {
+    border-color: #0e8e37 !important;
+  }
+  
+  /* Read More button styling */
+  .read-more-btn {
+    color: #333;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+  }
+  
+  .read-more-arrow {
+    transition: all 0.3s ease;
+    color: inherit;
+  }
+  
+  .read-more-btn:hover {
+    color: #f3930b !important;
+  }
+  
+  .read-more-btn:hover .read-more-arrow {
+    transform: translateX(5px);
+    color: #f3930b !important;
+  }
+
+  /* View All Button Animation */
+  #view-all-btn {
+    background-color: #0e8e37;
+    border-color: #0e8e37;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+
+  .view-all-text {
+    display: inline-block;
+    transition: all 0.3s ease;
+    color: white;
+  }
+
+  .view-all-arrow {
+    transition: all 0.3s ease;
+    color: white;
+  }
+
+  /* Hover Effects */
+  #view-all-btn:hover {
+    background-color: #0c7d32;
+    border-color: #0c7d32;
+  }
+
+  #view-all-btn:hover .view-all-text {
+    transform: translateX(-3px);
+    color: white;
+  }
+
+  #view-all-btn:hover .view-all-arrow {
+    transform: translateX(5px);
+    color: white;
+  }
+
+  /* Pulse animation */
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }
+
+  #view-all-btn:hover {
+    animation: pulse 0.5s ease;
+  }

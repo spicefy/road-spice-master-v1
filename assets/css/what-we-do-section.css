@@ -1,0 +1,67 @@
+/* General Section Styling */
+.what-we-do-section {
+  background: linear-gradient(to right, #2c2f74, #1a1c3a);
+  color: white;
+}
+
+.what-we-do-section h2 {
+  color: #2ecc71;
+  font-weight: 700;
+}
+
+/* Service Items */
+.what-we-do-section .service-item {
+  display: flex;
+  align-items: start;
+  margin-bottom: 1.5rem;
+}
+
+.what-we-do-section .service-item i {
+  font-size: 1.75rem;
+  margin-right: 1rem;
+}
+
+/* Headings Colors */
+.what-we-do-section .service-item h5 {
+  margin-bottom: 0.25rem;
+}
+
+.what-we-do-section .text-warning {
+  color: #f1c40f !important;
+}
+
+.what-we-do-section .text-success {
+  color: #2ecc71 !important;
+}
+
+/* Center Quote Box */
+.what-we-do-section .quote-box {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid #3fc1c9;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  color: #f1c40f;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+/* Thumbnails */
+.what-we-do-section .video-thumbnails img {
+  width: 32%;
+  border-radius: 0.25rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.what-we-do-section .video-thumbnails img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Video Frame */
+.what-we-do-section .video-frame {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}

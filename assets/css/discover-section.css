@@ -1,0 +1,32 @@
+ .discover-section {
+      background-color: #f0f4fa; 
+      padding: 60px 20px;
+    }
+    .section-title {
+      font-weight: bold;
+      font-size: 2rem;
+      position: relative;
+      display: inline-block;
+      margin-bottom: 40px;
+    }
+    .section-title::after {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 3px;
+      background-color: green;
+      margin-top: 8px;
+    }
+    .discover-btn {
+      background-color: green;
+      color: white;
+      font-weight: bold;
+      padding: 15px 25px;
+      border: none;
+      width: 100%;
+    }
+    .discover-btn:hover {
+      background-color: #f3930b;;
+    }
+
+

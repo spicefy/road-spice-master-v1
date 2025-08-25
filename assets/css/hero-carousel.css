@@ -1,0 +1,129 @@
+    /* Hero Carousel Styles */
+    .hero-carousel {
+        position: relative;
+        z-index: 1;
+        margin-top: -60px;
+        padding-top: 60px;
+    }
+
+    /* Ensure navbar has higher z-index */
+    .navbar {
+        position: relative;
+        z-index: 2;
+    }
+
+    /* Hero Carousel specific styles */
+    #heroCarousel {
+        width: 100%;
+    }
+    .carousel-inner {
+        width: 100%;
+    }
+    .carousel-item {
+        height: 600px;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+    .carousel-caption {
+        position: absolute;
+        left: 10%;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 45%;
+        text-align: left;
+        padding: 40px;
+        border-radius: 5px;
+        margin: 0;
+        background-color: rgba(0, 0, 0, 0.6);
+        color: white;
+    }
+    .hero-title {
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    .hero-text {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    }
+    .hero-btn {
+        background-color: #e83e8c;
+        border: none;
+        padding: 12px 30px;
+        font-weight: bold;
+        font-size: 1.1rem;
+        border-radius: 30px;
+        transition: all 0.3s ease;
+    }
+    .hero-btn:hover {
+        background-color: #0e8e37;
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
+    .credit-text {
+        font-size: 0.8rem;
+        color: #ccc;
+        margin-top: 15px;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    }
+    
+    /* Override carousel control colors */
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        background-color: rgba(14, 142, 55, 0.7);
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        background-size: 60%;
+    }
+    
+    /* Responsive adjustments */
+    @media (max-width: 991.98px) {
+        .carousel-caption {
+            width: 60%;
+        }
+        .hero-title {
+            font-size: 2.5rem;
+        }
+    }
+    
+    @media (max-width: 767.98px) {
+        .carousel-item {
+            height: 500px;
+        }
+        .carousel-caption {
+            width: 80%;
+            left: 10%;
+            top: auto;
+            bottom: 20px;
+            transform: none;
+            padding: 20px;
+        }
+        .hero-title {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+        .hero-text {
+            font-size: 1rem;
+            margin-bottom: 20px;
+        }
+    }
+    
+    @media (max-width: 575.98px) {
+        .carousel-item {
+            height: 400px;
+        }
+        .hero-title {
+            font-size: 1.5rem;
+        }
+        .hero-text {
+            font-size: 0.9rem;
+        }
+        .hero-btn {
+            padding: 10px 20px;
+            font-size: 1rem;
+        }
+    }

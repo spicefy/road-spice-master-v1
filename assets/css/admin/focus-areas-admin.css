@@ -1,0 +1,221 @@
+/* Focus Areas Section - Customizer Admin Styles */
+/* Path: /assets/css/admin/focus-areas-admin.css */
+
+/* Repeater Control Styling */
+.customize-control-repeater .repeater-fields {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.customize-control-repeater .repeater-row {
+    background: #fff;
+    border: 1px solid #dcdcde;
+    margin-bottom: 10px;
+    position: relative;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+    border-radius: 2px;
+}
+
+.customize-control-repeater .repeater-row-header {
+    background: #f6f7f7;
+    border-bottom: 1px solid #dcdcde;
+    padding: 8px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: move;
+}
+
+.customize-control-repeater .repeater-row-title {
+    font-weight: 600;
+    color: #1d2327;
+    flex-grow: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.customize-control-repeater .repeater-row-remove {
+    color: #d63638;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.customize-control-repeater .repeater-row-remove:hover {
+    color: #ff0000;
+}
+
+.customize-control-repeater .repeater-row-fields {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.customize-control-repeater .repeater-field {
+    margin-bottom: 0;
+}
+
+.customize-control-repeater .repeater-field-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #1d2327;
+}
+
+.customize-control-repeater .repeater-field-input {
+    width: 100%;
+    padding: 6px 8px;
+    border: 1px solid #8c8f94;
+    border-radius: 3px;
+    background: #fff;
+    box-shadow: 0 0 0 transparent;
+    transition: border-color 0.15s ease-in-out;
+}
+
+.customize-control-repeater .repeater-field-input:focus {
+    border-color: #2271b1;
+    box-shadow: 0 0 0 1px #2271b1;
+    outline: 2px solid transparent;
+}
+
+.customize-control-repeater .repeater-add {
+    margin-top: 8px;
+    background: #2271b1;
+    border-color: #2271b1;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-weight: 400;
+}
+
+.customize-control-repeater .repeater-add:hover {
+    background: #135e96;
+    border-color: #135e96;
+    color: #fff;
+}
+
+/* Media Uploader Styles */
+.customize-control-repeater .repeater-media-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.customize-control-repeater .repeater-media-preview {
+    min-height: 60px;
+    background: #f0f0f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px dashed #8c8f94;
+    border-radius: 2px;
+}
+
+.customize-control-repeater .repeater-media-preview img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.customize-control-repeater .repeater-media-upload,
+.customize-control-repeater .repeater-media-remove {
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    border-radius: 2px;
+}
+
+.customize-control-repeater .repeater-media-upload {
+    background: #f0f0f1;
+    border: 1px solid #8c8f94;
+}
+
+.customize-control-repeater .repeater-media-upload:hover {
+    background: #e0e0e1;
+}
+
+.customize-control-repeater .repeater-media-remove {
+    background: #d63638;
+    color: white;
+    border: 1px solid #d63638;
+    display: none;
+}
+
+.customize-control-repeater .repeater-media-remove:hover {
+    background: #b32d2e;
+    border-color: #b32d2e;
+}
+
+/* Customizer Preview Enhancements */
+#customize-preview .focus-areas-section {
+    transition: all 0.3s ease;
+}
+
+#customize-preview .section-icon {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Tooltip Styles for Customizer */
+.customize-control-repeater .description {
+    font-size: 12px;
+    font-style: italic;
+    color: #646970;
+    margin-top: 4px;
+    line-height: 1.4;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 782px) {
+    .customize-control-repeater .repeater-row-fields {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Focus Areas Specific Controls */
+#customize-control-focus_areas_central_image_control .current {
+    margin-bottom: 10px;
+}
+
+#customize-control-focus_areas_central_image_control .actions {
+    display: flex;
+    gap: 5px;
+}
+
+/* Sortable Handle Styles */
+.customize-control-repeater .repeater-row-header::before {
+    content: "\f333";
+    font-family: dashicons;
+    margin-right: 8px;
+    color: #787c82;
+    vertical-align: middle;
+}
+
+/* Checkbox Field Styles */
+.customize-control-repeater .repeater-field-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.customize-control-repeater .repeater-field-checkbox input {
+    margin: 0;
+}
+
+/* Select Field Styles */
+.customize-control-repeater .repeater-field-select select {
+    height: auto;
+    padding: 5px;
+    line-height: 1;
+}
+
+/* Textarea Field Styles */
+.customize-control-repeater .repeater-field-textarea textarea {
+    min-height: 80px;
+    resize: vertical;
+}
